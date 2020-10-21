@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.mu.logistic.api;
+
+service NotificationService {
+    rpc SendNotification(SendNotificationRequest) returns (SendNotificationResponse);
+}
+
+message SendNotificationRequest {
+    int32 task_id =1;
+}
+
+message SendNotificationResponse {
+    bool result = 1;
+}

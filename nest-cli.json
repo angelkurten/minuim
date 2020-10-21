@@ -1,0 +1,39 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/mu-platform/src",
+  "projects": {
+    "mu-platform": {
+      "type": "application",
+      "root": "apps/mu-platform",
+      "entryFile": "main",
+      "sourceRoot": "apps/mu-platform/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mu-platform/tsconfig.app.json"
+      }
+    },
+    "mu-web": {
+      "type": "application",
+      "root": "apps/mu-web",
+      "entryFile": "main",
+      "sourceRoot": "apps/mu-web/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mu-web/tsconfig.app.json"
+      }
+    },
+    "mu-common": {
+      "type": "library",
+      "root": "libs/common",
+      "entryFile": "index",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/mu-platform/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/mu-platform"
+}

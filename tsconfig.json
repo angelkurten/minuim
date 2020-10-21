@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": true,
+    "paths": {
+      "@app/commos": [
+        "libs/commos/src"
+      ],
+      "@app/commos/*": [
+        "libs/commos/src/*"
+      ],
+      "@app/commons": [
+        "libs/commons/src"
+      ],
+      "@app/commons/*": [
+        "libs/commons/src/*"
+      ],
+      "@mu/mu-common": [
+        "libs/common/src"
+      ],
+      "@mu/mu-common/*": [
+        "libs/common/src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

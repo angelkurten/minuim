@@ -1,0 +1,23 @@
+{
+    "tslint.alwaysShowRuleFailuresAsWarnings": false,
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.tslint": true,
+    //     "source.organizeImports": true,
+    //     "source.fixAll": true
+    // },
+    "cSpell.words": [
+        "Chronos",
+        "Geocode",
+        "Grpc",
+        "LUPAP",
+        "Loggeable",
+        "OSRM",
+        "geopoint",
+        "nestjs"
+    ],
+    // "files.exclude": {
+    //     "node_modules/": true
+    // },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "vsicons.presets.nestjs": true
+}
